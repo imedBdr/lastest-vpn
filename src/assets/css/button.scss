@@ -1,0 +1,15 @@
+@import '../../assets/css/varriables.scss';
+
+.btn-outlined{
+    background-color: transparent;
+    color:$primaryColor;
+    border: 1px solid $primaryColor;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.btn-md{
+    padding: 13px 45px ;
+}

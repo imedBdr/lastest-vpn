@@ -1,0 +1,38 @@
+@import '../../assets/css/varriables.scss';
+
+.Header{
+    width:$primaryWidth;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul.navbar{
+        list-style: none;
+        margin:0px;
+        padding: 0px;
+        display:  flex;
+        li{
+            margin-right: 40px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+    }
+    .auth{
+        display: flex;
+        align-items: center;
+        a{
+            display: block;
+            margin-right: 30px;
+            font-weight: 500;
+            color: $PrimaryFontColor;
+            &:last-child{
+                margin: 0px;
+                color:$primaryColor;
+            }
+        }
+    }
+
+}

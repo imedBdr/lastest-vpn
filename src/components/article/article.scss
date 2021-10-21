@@ -1,0 +1,51 @@
+@import '../../assets/css/varriables.scss';
+
+
+.Article{
+    width:$primaryWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 70px;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    h1, h2{
+        margin:10px 0px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin:10px 0px;
+        margin-bottom: 50px;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            i{
+                font-size: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.Article.left{
+    p{
+        margin-bottom: 25px;
+    }
+}
