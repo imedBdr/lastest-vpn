@@ -1,0 +1,14 @@
+@import '../../assets/css/varriables.scss';
+
+.Sponsored{
+    width: $primaryWidth;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 80px auto;
+
+    img{
+        width: 160px;
+        height: 90px;
+    }
+}

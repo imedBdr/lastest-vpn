@@ -1,13 +1,33 @@
 @import '../../assets/css/varriables.scss';
 
-.btn-outlined{
-    background-color: transparent;
-    color:$primaryColor;
-    border: 1px solid $primaryColor;
+.btn{
+
     border-radius: 50px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+}
+
+.btn-outlined{
+    background-color: transparent;
+    color:$primaryColor;
+    border: 1px solid $primaryColor;
+
+    &:hover{
+        background-color: $primaryColor;
+        color:$primaryBackGround;
+    }
+}
+
+.btn-full{
+    background-color: $primaryColor;
+    color:$primaryBackGround;
+
+    &:hover{
+        background-color: transparent;
+        color:$primaryColor;
+        border: 1px solid $primaryColor;
+    }
 }
 
 .btn-md{

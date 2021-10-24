@@ -17,7 +17,7 @@ const Header = (props) =>{
         </ul>
         <div className={"auth"}>
             <Link to ={"/"} className={""}>Sign In</Link>
-            <Link className={"btn-outlined btn-md"} to={"/"}>Sign Up</Link>
+            <Link className={"btn btn-outlined btn-md"} to={"/"}>Sign Up</Link>
         </div>        
     </div>)
 }

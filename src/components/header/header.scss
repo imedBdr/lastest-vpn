@@ -31,6 +31,9 @@
             &:last-child{
                 margin: 0px;
                 color:$primaryColor;
+                &:hover{
+                    color: $primaryBackGround;
+                }
             }
         }
     }

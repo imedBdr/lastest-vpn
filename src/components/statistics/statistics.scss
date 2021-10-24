@@ -4,42 +4,54 @@
     width: $primaryWidth;
     margin: 0px auto;
     padding: 67.5px 100px; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    .item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 1px solid lightgrey;
-    &:last-child{
-        border:none;
-    }
-    .icon{
-        width: 55px;
-        height: 55px;
-        margin-right: 20px;
-        border-radius: 55px;
-        background-color: $secondaryColor;
-        display: flex;
-        align-items: center;
+    position: relative;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        i{
-            color:$primaryColor;
+        align-items: center;
+        .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid lightgrey;
+        &:last-child{
+            border:none;
+        }
+        .icon{
+            width: 55px;
+            height: 55px;
+            margin-right: 20px;
+            border-radius: 55px;
+            background-color: $secondaryColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color:$primaryColor;
+            }
+        }
+        .text{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            .bold{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+                color: black;
+            }
+        }
+        
         }
     }
-    .text{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 20px;
-        .bold{
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 25px;
-            color: black;
-        }
-    }
-    
+    .shadow{
+        position: absolute;
+        width:calc(100% - 200px);
+        height: 50px;
+        background-color: lightgrey;
+        filter: blur(70px);
+        border-radius: 10px;
+        box-sizing: border-box;
     }
 }

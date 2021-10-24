@@ -1,0 +1,26 @@
+@import '../../assets/css/varriables.scss';
+
+.Plans{
+    width: $primaryWidth;
+    margin: 0px auto;
+    padding: 80px 0px ;
+    text-align: center;
+
+    h2{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        color: $PrimaryFontColor;
+    }
+
+    >p{
+        width: 555px;
+        margin:0px auto 60px auto;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
