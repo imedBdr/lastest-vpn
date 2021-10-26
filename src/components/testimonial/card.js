@@ -1,3 +1,5 @@
+import './card.scss';
+
 const Card = ({ avatar, fullName, location, rating, text }) =>(
     <div className={'Card'}>
         <div className={'row'}>
@@ -12,8 +14,8 @@ const Card = ({ avatar, fullName, location, rating, text }) =>(
                 {rating}
                 <i className={'material-icons'}>star</i>
             </div>
-            <p>{text}</p>
         </div>
+        <p>{text}</p>
     </div>
 )
 

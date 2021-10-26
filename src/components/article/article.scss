@@ -2,6 +2,7 @@
 
 
 .Article{
+    margin:100px auto;
     width:$primaryWidth;
     display: flex;
     justify-content: space-between;
@@ -13,11 +14,13 @@
         line-height: 70px;
     }
     h2{
+        width: 385px;
         font-weight: 500;
         font-size: 35px;
         line-height: 50px;
     }
     h1, h2{
+        color: $PrimaryFontColor;
         margin:10px 0px;
     }
 
@@ -36,7 +39,13 @@
         li{
             display: flex;
             align-items: center;
+            font-size: 14px;
+            line-height: 30px;
+            margin-bottom: 15px;
             i{
+                background-color: $accentColor;
+                color: $primaryBackGround;
+                border-radius: 20px;
                 font-size: 20px;
                 margin-right: 20px;
             }
@@ -45,7 +54,9 @@
 }
 
 .Article.left{
+    flex-direction: row-reverse;
     p{
         margin-bottom: 25px;
+        width: 430px;
     }
 }
