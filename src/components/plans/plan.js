@@ -2,7 +2,7 @@ import './plan.scss'
 
 const Plan = ({ title, features, price = 'Free', unit=' / mo'}) =>(
     <div className={'Plan'}>
-        <img src={'./pictures/plan.svg'} alt={''} />
+        <img src={'./pictures/plan.png'} alt={''} />
         <div className={'title'}>
             {title}
         </div>

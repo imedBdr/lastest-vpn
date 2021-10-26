@@ -33,9 +33,6 @@ const Statistics = ({ users=90, locations=30, servers=50 })=>{
                     </div>
                 </div>
             </div>
-            <div className={'shadow'}>
-                4
-            </div>
         </div>
     )
 }
