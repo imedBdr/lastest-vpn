@@ -12,3 +12,13 @@
         height: 90px;
     }
 }
+
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .Sponsored{
+        width: $mediumWidth;
+        img{
+            width: 120px;
+            height: 67.5px;
+        }
+    }
+}

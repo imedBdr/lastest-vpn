@@ -17,3 +17,16 @@
     left: 0px;
     right: 0px;
 }
+
+
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .Subscribe{
+        padding: 20px 30px;
+        width: $mediumWidth;
+        height: auto;
+        h2{
+            width:400px;
+            line-height: 40px;
+        }
+    }
+}
