@@ -3,10 +3,16 @@
 .Header{
     width:$primaryWidth;
     margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px  auto;
+    column-gap: 140px;
     align-items: center;
 
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     ul.navbar{
         list-style: none;
         margin:0px;
@@ -37,17 +43,22 @@
             }
         }
     }
+    #toogleMenu{
+        display: none;
+    }
 
 }
 
-@media only screen and (min-width:768px) and (max-width:1200px){
+@media only screen and (max-width:1200px){
     .Header{
         margin: 10px auto;
-        width: 100%;
-        padding:0px 10px;
+        width: $mediumWidth;
+        padding:0px;
+        column-gap: 40px;
         ul.navbar{
             li{
-                margin-right: 20px;
+                margin-right: 10px;
+                font-size: 14px;
                 &:last-child{
                     margin-right: 0px;
                 }
@@ -56,7 +67,54 @@
         .auth{
             a{
                 margin-right: 10px;
+                font-size: 14px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .Header{
+        margin: 10px auto;
+        width: 100%;
+        padding:0px 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .row{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top:50px;
+            left: 0px;
+            right:0px;
+            background-color: $primaryBackGround;
+        }
+        ul.navbar{
+            width: 100%;
+            flex-direction: column;
+            li{
+                text-align: center;
+                margin: 5px 0px;
+                padding:10px 0px;
+            }
+        }
+        .auth{
+            flex-direction: column;
+            margin: 10px 0px;
+            a, a:last-child{
+                margin: 10px 0px;
+            }
+        }
+        .row.open{
+            display: flex;
+            display: none;
+        }
+
+        #toogleMenu{
+            display: block;
         }
     }
 }

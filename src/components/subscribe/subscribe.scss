@@ -16,10 +16,14 @@
     bottom: -115px;
     left: 0px;
     right: 0px;
+
+    h2{
+        color: $PrimaryFontColor;
+    }
 }
 
 
-@media only screen and (min-width:768px) and (max-width:1200px){
+@media only screen and (max-width:1200px){
     .Subscribe{
         padding: 20px 30px;
         width: $mediumWidth;
@@ -27,6 +31,26 @@
         h2{
             width:400px;
             line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .Subscribe{
+        padding: 20px 30px;
+        width: 90%;
+        flex-direction: column;
+        bottom: -165px;
+        h2{
+            width:auto;
+            line-height: 40px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .btn{
+            padding: 13px 45px ;
         }
     }
 }
